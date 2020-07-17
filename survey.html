@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Survey about pets</title>
+    </head>
+	<body>
+        <header>
+            <a href="index.html">Back to Epagneul Picard page</a>
+            <h1>Survey about pets</h1>
+        </header>
+        <main>
+            <form action="https://formspree.io/moqkprvj" method="POST">
+                <ol>
+                    <li>
+                        <label>
+                            Name:
+                            <input name="user-name">
+                        </label>
+                    </li>                   
+                    <li>
+                        <legend>Do you have pet at home?</legend>
+                        <label>
+                            <input type="radio" name="variant">
+                            Yes
+                        </label>
+                        <label>
+                            <input type="radio" name="variant">
+                            No
+                        </label>
+                    </li>
+                    <li>
+                        <legend>What kind of pet do you have?</legend>
+                        <select size="4" name="kindofpet" multiple>
+                            <option>Dog</option>
+                            <option>Cat</option>
+                            <option>Cow</option>
+                            <option>Spider</option>
+                            <option>Rat</option>
+                            <option>Pig</option>
+                            <option>Horse</option>
+                            <option>Goat</option>
+                        </select>
+                    </li>
+                    <li>
+                        <legend>How many pets do you have?</legend>
+                        <select name="amountofpet">
+                            <option>I told you, I have no pets</option>
+                            <option>One</option>
+                            <option>Two</option>
+                            <option>Three</option>
+                            <option>Four</option>
+                            <option>Five</option>
+                            <option>More than five</option>
+                            <option>Hard to count</option>
+                        </select>
+                    </li>
+                    <li>
+                        <legend>If you have a pet what color is its coat?</legend>
+                        <input type="checkbox" id="01">
+                        <label for="01">Black</label>
+                        <br>
+                        <input type="checkbox" id="02">
+                        <label for="02">White</label>
+                        <br>
+                        <input type="checkbox" id="03">
+                        <label for="03">Brown</label>
+                        <br>
+                        <input type="checkbox" id="04">
+                        <label for="04">With patterns</label>
+                        <br>
+                        <input type="checkbox" id="05">
+                        <label for="05">With tan</label>
+                    </li>
+                    <li>
+                        <legend>Comments/Suggestions</legend>
+                        <textarea name="comment-text" rows="5" maxlength="50" placeholder="Comment"></textarea>
+                    </li>
+                </ol>
+                <input type="submit">
+            </form>
+            <footer>
+                <p id="copyright">&#169; Copyright 2020 Hm02</p>
+            </footer>
+        </main>
+	</body>
+</html>
